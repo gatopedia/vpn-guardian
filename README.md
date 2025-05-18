@@ -106,7 +106,7 @@ Feel free to open issues or submit pull requests on GitHub.
 
 ## Support & Contact
 
-For questions or support, reach out via GitHub or Telegram bot.
+For questions or support, reach out via GitHub.
 
 ---
 
