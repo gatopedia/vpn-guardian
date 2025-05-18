@@ -34,7 +34,7 @@ This means you won’t get spammed with constant status messages — only import
 
 ## Installation & Usage
 
-1. SSH into your router or device for example 192.168.8.1 or 192.168.1.1 or any you have :
+1. SSH into your router or Linux device (e.g., 192.168.8.1, 192.168.1.1 — replace with your actual IP):
     ```bash
     ssh root@192.168.8.1
     ```
@@ -102,6 +102,14 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## Contribution
 
 Feel free to open issues or submit pull requests on GitHub.
+
+---
+
+## Notes
+
+- You can change the default script path (`/root/vpn-guardian.sh`) if you prefer another location.
+- Replace IP addresses or usernames to match your actual device.
+- Make sure `cron` is installed and running if using a minimal Linux distribution or OpenWrt.
 
 ---
 
