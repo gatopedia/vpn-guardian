@@ -39,11 +39,12 @@ This means you won’t get spammed with constant status messages — only import
     ssh root@192.168.8.1
     ```
 
-2. Remove old versions if any:
+2. Remove old versions or fix issues
+    If you’ve already created the script before and want to remove it (e.g. to fix a mistake or start clean), use
     ```bash
     rm /root/vpn-guardian.sh
     ```
-
+    This ensures you delete any previous version before creating or correcting the script.
 3. Create the script file:
     ```bash
     vi /root/vpn-guardian.sh
