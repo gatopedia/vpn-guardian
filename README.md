@@ -26,7 +26,7 @@ This means you won’t get spammed with constant status messages — only import
 ## Requirements
 
 - `curl` command available.
-- Access to Telegram bot token and chat ID.
+- Access to Telegram bot token and chat ID. (Check at the end, how to create it).
 - Router or Linux device with VPN (WireGuard or OpenVPN).
 - Basic knowledge of SSH and cron jobs.
 
@@ -118,6 +118,52 @@ Feel free to open issues or submit pull requests on GitHub.
 For questions or support, reach out via GitHub.
 
 ---
+
+
+## 🔧 How to Create a Telegram Bot & Get Your Chat ID
+
+1. **Create a Telegram Bot**
+
+   * Open Telegram and search for **@BotFather**.
+   * Start a conversation and type `/newbot`.
+   * Follow the instructions to choose a name and username.
+   * Once done, you will receive your **bot token**, which looks like:
+
+     ```
+     123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+     ```
+
+2. **Get Your Chat ID**
+
+   * Send any message to your new bot from your Telegram account.
+   * Then, open this URL in your browser (replace `<YOUR_BOT_TOKEN>` with your actual token):
+
+     ```
+     https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
+     ```
+   * You will see a JSON response. Look for something like:
+
+     ```json
+     {
+       "update_id":123456789,
+       "message":{
+         "chat":{
+           "id":123456789,
+           ...
+         }
+       }
+     }
+     ```
+   * The `id` value inside `chat` is your **Chat ID**.
+
+3. **Important Notes**
+
+   * You must send a message to the bot before using `getUpdates` — otherwise, the chat ID will not appear.
+   * Make sure your bot is **not private** or blocked.
+
+---
+
+
 
 Happy monitoring! 🛡️🐾
 
