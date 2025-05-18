@@ -34,7 +34,7 @@ This means you won’t get spammed with constant status messages — only import
 
 ## Installation & Usage
 
-1. SSH into your router or device:
+1. SSH into your router or device for example 192.168.8.1 or 192.168.1.1 or any you have :
     ```bash
     ssh root@192.168.8.1
     ```
