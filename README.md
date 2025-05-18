@@ -1,10 +1,15 @@
 vpn-guardian.sh
+
 Version: 1.0 
+
 Author: gatopedia License: MIT
+
 Overview
+
 vpn-guardian.sh is a simple and lightweight VPN monitoring script designed for routers with a single VPN tunnel (WireGuard or OpenVPN). It notifies you via Telegram when the VPN connection goes up or down. Ideal for OpenWrt-based systems or routers with shell access.
 
 Requirements
+
 * Router with shell (e.g., OpenWrt)
 * WireGuard and/or OpenVPN installed
 * Access to curl, ps, and grep (typically via BusyBox)
